@@ -26,7 +26,7 @@ defmodule Sensor.SocketClient do
   def handle_continue(:join_channel, state) do
     case PhoenixClient.Socket.connected?(state.socket) do
       true ->
-        {:ok, _response, channel} = PhoenixClient.Channel.join(state.socket, "device:test")
+        {:ok, _response, channel} = PhoenixClient.Channel.join(state.socket, "device:chambre")
         {:noreply, %{state | channel: channel}}
 
       _ ->

@@ -7,7 +7,7 @@ use Mix.Config
 
 config :sensor,
   target: Mix.target(),
-  gateway_url: "ws://192.168.1.21:4000/socket/websocket"
+  gateway_url: "ws://51.15.202.208:4001/socket/websocket"
 
 # Customize non-Elixir parts of the firmware. See
 # https://hexdocs.pm/nerves/advanced-configuration.html for details.
