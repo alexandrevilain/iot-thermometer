@@ -13,7 +13,7 @@ defmodule Sensor.Application do
     children =
       [
         {NervesDHT, [name: :dht_sensor, sensor: :dht22, pin: 17]},
-        {Sensor.SocketClient, [url: Application.fetch_env!(:sensor, :gateway_url)]},
+        {Tortoise.Connection, Sensor.MqttClient.get_config()},
         {Sensor.Worker, []}
       ] ++ children(target())
 

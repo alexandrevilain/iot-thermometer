@@ -61,9 +61,7 @@ defmodule Sensor.MixProject do
 
       # My dependences:
       {:nerves_dht, git: "https://github.com/visciang/nerves_dht.git", tag: "1.1.4"},
-      {:phoenix_client, "~> 0.9.0"},
-      {:websocket_client, "~> 1.3"},
-      {:jason, "~> 1.0"}
+      {:tortoise, "~> 0.9.4"}
     ]
   end
 

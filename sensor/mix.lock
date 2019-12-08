@@ -3,6 +3,7 @@
   "dht": {:git, "https://github.com/jjcarstens/dht.git", "a66c5b9a8c0fbc260acad73c97c27e9670edb957", []},
   "dns": {:hex, :dns, "2.1.2", "81c46d39f7934f0e73368355126e4266762cf227ba61d5889635d83b2d64a493", [:mix], [{:socket, "~> 0.3.13", [hex: :socket, repo: "hexpm", optional: false]}], "hexpm"},
   "elixir_make": {:hex, :elixir_make, "0.6.0", "38349f3e29aff4864352084fc736fa7fa0f2995a819a737554f7ebd28b85aaab", [:mix], [], "hexpm"},
+  "gen_state_machine": {:hex, :gen_state_machine, "2.0.5", "9ac15ec6e66acac994cc442dcc2c6f9796cf380ec4b08267223014be1c728a95", [:mix], [], "hexpm"},
   "jason": {:hex, :jason, "1.1.2", "b03dedea67a99223a2eaf9f1264ce37154564de899fd3d8b9a21b1a6fd64afe7", [:mix], [{:decimal, "~> 1.0", [hex: :decimal, repo: "hexpm", optional: true]}], "hexpm"},
   "mdns": {:hex, :mdns, "1.0.3", "f08414daf5636bf5cd364611e838818e9250c91a3282a817ad9174b03e757401", [:mix], [{:dns, "~> 2.0", [hex: :dns, repo: "hexpm", optional: false]}], "hexpm"},
   "muontrap": {:hex, :muontrap, "0.5.0", "0b885a4095e990000d519441bccb8f037a9c4c35908720e7814a516a606be278", [:make, :mix], [{:elixir_make, "~> 0.6", [hex: :elixir_make, repo: "hexpm", optional: false]}], "hexpm"},
@@ -40,6 +41,7 @@
   "socket": {:hex, :socket, "0.3.13", "98a2ab20ce17f95fb512c5cadddba32b57273e0d2dba2d2e5f976c5969d0c632", [:mix], [], "hexpm"},
   "system_registry": {:hex, :system_registry, "0.8.2", "df791dc276652fcfb53be4dab823e05f8269b96ac57c26f86a67838dbc0eefe7", [:mix], [], "hexpm"},
   "toolshed": {:hex, :toolshed, "0.2.11", "0cd5312bd6a48f5b654b6ffa9239a63af9f3d200da414790fe25f066e14842a9", [:mix], [{:nerves_runtime, "~> 0.8", [hex: :nerves_runtime, repo: "hexpm", optional: true]}], "hexpm"},
+  "tortoise": {:hex, :tortoise, "0.9.4", "3bca5f4475f80a5bd45aab644ddb3364dd0956b67f4202dcef6ed20e045ea3a6", [:mix], [{:gen_state_machine, "~> 2.0", [hex: :gen_state_machine, repo: "hexpm", optional: false]}], "hexpm"},
   "uboot_env": {:hex, :uboot_env, "0.1.1", "b01e3ec0973e99473234f27839e29e63b5b81eba6a136a18a78d049d4813d6c5", [:mix], [], "hexpm"},
   "websocket_client": {:hex, :websocket_client, "1.3.0", "2275d7daaa1cdacebf2068891c9844b15f4fdc3de3ec2602420c2fb486db59b6", [:rebar3], [], "hexpm"},
 }

@@ -7,7 +7,11 @@ use Mix.Config
 
 config :sensor,
   target: Mix.target(),
-  gateway_url: "ws://51.15.202.208:4001/socket/websocket"
+  name: System.get_env("NERVES_DEVICE_NAME") || "chambre"
+
+config :mqtt
+  host: "test.mosquitto.org"
+  port: 1883
 
 # Customize non-Elixir parts of the firmware. See
 # https://hexdocs.pm/nerves/advanced-configuration.html for details.

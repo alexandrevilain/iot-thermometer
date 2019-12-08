@@ -3,7 +3,7 @@
 ## Goal of this project
 
 I started this project to monitor my flat's temperature and humidity.
-The extra goal was to work with Elixir, Nerves and Phoenix Framework.
+The extra goal was to work with Elixir and Nerves.
 
 If you ask yourself, "Isn't it too much for the main goal ?". Yes it is. But I wanted to work with Elixir, because I love Elixir.
 

@@ -8,19 +8,18 @@ import (
 type MqttConfig struct {
 	ConnectionString string `default:"tcp://test.mosquitto.org:1883"`
 	ClientID         string `default:"home-cloud-agent"`
+	UseCredentials   bool   `default:"false"`
 }
 
-// InfluxDBConfig is the config stuct for influxdb client related config
-type InfluxDBConfig struct {
-	ConnectionString string `default:"http://localhost:8086"`
-	Username         string `default:"thermometer"`
-	Password         string `default:"thermometer"`
+// HTTP is the config stuct for the http server
+type HTTP struct {
+	ListenAddr string `default:":4000"`
 }
 
 // Config is the config struct of the forwarder agent
 type Config struct {
-	Mqtt     MqttConfig
-	InfluxDB InfluxDBConfig
+	Mqtt MqttConfig
+	HTTP HTTP
 }
 
 // GetFromEnv return the Config struct populated with env variables values
